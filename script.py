@@ -22,7 +22,9 @@ def gpucheck(keyword):
         browser = webdriver.Chrome()
         browser.get('gpudict_url')
         searchElem = browser.find_element_by_css_selector('#pi-form > div.col-12.py-2 > div.bg-grey.border.position-relative.pi_loc-stock__box.border-danger > div.check-bg.stocklevel.bg-danger')
-        if 'danger' in searchElem
+        if 'danger' in searchElem:
+            return gpudict_url
+
 
 
 
